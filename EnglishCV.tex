@@ -9,7 +9,6 @@
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
 \usepackage[big]{layaureo} 				%better formatting of the A4 page
-% an alternative to Layaureo can be ** \usepackage{fullpage} **
 \usepackage{supertabular} 				%for Grades
 \usepackage{titlesec}					%custom \section
 
@@ -21,12 +20,12 @@
 \defaultfontfeatures{Mapping=tex-text}
 %\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
 %%% modified for Karol Kozioł for ShareLaTeX use
-\setmainfont[
-SmallCapsFont = Fontin-SmallCaps.otf,
-BoldFont = Fontin-Bold.otf,
-ItalicFont = Fontin-Italic.otf
-]
-{LinLibertine_R.otf}
+%\setmainfont[
+%SmallCapsFont = Fontin-SmallCaps.otf,
+%BoldFont = Fontin-Bold.otf,
+%ItalicFont = Fontin-Italic.otf
+%]
+%{LinLibertine_R.otf}
 %%%
 %CV Sections inspired by: 
 %http://stefano.italians.nl/archives/26
@@ -45,7 +44,8 @@ ItalicFont = Fontin-Italic.otf
 \textblockorigin{2mm}{0.65\paperheight}
 \setlength{\parindent}{0pt}
 
-\linespread{1.25}
+\linespread{1.2}
+
 %--------------------BEGIN DOCUMENT----------------------
 \begin{document}
 %headings setting
@@ -56,8 +56,8 @@ ItalicFont = Fontin-Italic.otf
 
 %--------------------TITLE-------------
 \par{\centering
-		{\Huge Curriculum Vitae \\
-		\Huge Xiaojun Lin \\
+		{\LARGE \textbf{CURRICULUM VITAE}  \\
+		\Large \textbf{Xiaojun Lin} \\
 	}\bigskip\par}
 	
 \thispagestyle{empty} %no page-number in first page
@@ -65,107 +65,139 @@ ItalicFont = Fontin-Italic.otf
 %--------------------SECTIONS-----------------------------------
 %CONTACT
 \section{Contact}
-School of Medicine and Health Management\\
-Tongji Medical College\\
-Huazhong University of Science and Technology\\
-No.13 Hangkong Rd.\\
-Wuhan, Hubei 430030, China\\
-E-Mail: xjlin@hust.edu.cn\\
-Cell: +86 130-0632-6403 \\[.2cm]
-Find me on: 
+\begin{tabular}{l p{11.5cm}}
+\textbf{Adress: } & School of Medicine and Health Management, Tongji Medical College, Huazhong University of Science and Technology\\ 
+ 				  & Room 415, No.13 Hangkong Rd., \\
+ 				  & Wuhan, Hubei 430030, China\\
+\textbf{E-Mail: } & xjlin@hust.edu.cn\\
+%\textbf{Phone: } & +86 130-0632-6403 	\\
+
+\textbf{Find me: } &
 \href{https://github.com/xiaojunlin}{GitHub},
 \href{https://orcid.org/0000-0003-4284-2401}{ORCID}, \href{https://scholar.google.com/citations?user=ZBGYTowAAAAJ&hl=zh-CN}{Google Scholar}, \href{https://www.researchgate.net/profile/Xiaojun_Lin2}{ResearchGate}, \href{https://xiaojunlin.github.io}{Personal website}
+\end{tabular}
+
 %Education
 \section{Education}
-\begin{tabular}{r p{11cm}}
- 2014 -- Present & \textsc{Ph.D.} in Social Science and Health Management, Huazhong University of Science and Technology, Wuhan, China \\
-& \small Dissertation: ``Hospital Efficiency Measurement and Its Determinants under Quality and Resource Constrains: Evidence from Tertiary General Hospitals in Shanxi, China''\\
-& \small Advisor: Prof. Hongbing \textsc{Tao}\\
- 2010 -- 2014 & \textsc{Bachelor} in Health Management, Huazhong University of Science and Technology, Wuhan, China\\
-& \small Advisor: Prof. Hongbing \textsc{Tao}\\
+\begin{tabular}{rr p{11cm}}
+ 2014 -- 2019 & Ph.D. & Huazhong University of Science and Technology, Wuhan, China \\
+&& \small Dissertation: ``The Efficiency Measurement and Its Determinants in the Tertiary Public General Hospitals under the Restrictions of Resource and Quality''\\
+&& \small Advisor: Dr. Hongbing Tao\\
+ 2010 -- 2014 & B.M. & Huazhong University of Science and Technology, Wuhan, China\\
+&& \small Advisor: Dr. Hongbing Tao\\
 \end{tabular}
 
 %Experience
 \section{Experience}
 \begin{tabular}{rl}
-  Sep. 2018  -- Nov. 2018 & Saint Louis University, Saint Louis, USA\\
+  Sep. 2018  -- Nov. 2018 & Saint Louis University, Saint Louis, MO, USA\\
 & \small Department: Department of Health Management and Policy\\
 & \small Role: Visiting scholar\\
-& \small Advisors: Prof. Jeremy C. \textsc{Green}, Prof. Hong. \textsc{Xian}, Prof. Kenton \textsc{Johnston}\\
- Oct. 2017  --  Dec. 2017 & University of Michigan, Ann Arbor, USA\\
+& \small Advisors: Dr. Jeremy Green, Dr. Hong Xian, Dr. Kenton Johnston\\
+ Oct. 2017  --  Dec. 2017 & University of Michigan, Ann Arbor, MI, USA\\
 & \small Department: Department of Biostatistics\\
 & \small Role: Visiting scholar\\
-& \small Advisor: Prof. Kevin \textsc{He}\\
- Apr. 2018 -- Aug. 2018 & Public Hospital Administration of Shenzhen Municipality, Guangdong, China \\
- & Role: Intern; Manager: Jixiang \textsc{Yan} \\
+& \small Advisor: Dr. Kevin He\\
+ Apr. 2018 -- Aug. 2018 & Public Hospital Administration of Shenzhen, Guangdong, China \\
+ & Role: Intern; Manager: Jixiang Yan \\
 \end{tabular}
 
 %Research Interests
 \section{Research Interests}
-Health Policy, Health Economics
+Health Policy; Health Economics
 
 %Publications
 \section{Publications}
 \subsection*{International Peer-reviewed Journal Articles}
 \begin{longtable}{r p{13cm}}
-2018 & \underline{\textbf{Xiaojun Lin}}, Miao Cai, John Fu, Kevin He, Tianyu Jiang, Wei Lu, Ziling Ni, Hongbing Tao (2018). Does Hospital Competition Harm Inpatient Quality? Empirical Evidence from Shanxi, China. \emph{International Journal of Environmental Research and Public Health}, 15(10),2283. DOI: \href{https://doi.org/10.3390/ijerph15102283}{10.3390/ijerph15102283}\\
-2018 & Chang Xu, Qiang Fu, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Manli Wang, Shuxu Xia, Haoling Xiong (2018). Effect of Cesarean Section on the Severity of Postpartum Hemorrhage in Chinese Women: The Shanxi Study. \emph{Current Medical Science},38(4),618-625. DOI: \href{https://doi.org/10.1007/s11596-018-1922-1}{10.1007/s11596-018-1922-1}\\
-2018 & Miao Cai, Echu Liu, Hongbing Tao, Zhengmin Qian, Qiang (John) Fu, \underline{\textbf{Xiaojun Lin}}, Manli Wang, Chang Xu, Ziling Ni (2018). Does A Medical Consortium Influence Health Outcomes of Hospitalized Cancer Patients? An Integrated Care Model in Shanxi, China, \emph{International Journal of Integrated Care},18(2),7. DOI: \href{https://doi.org/10.5334/ijic.3588}{10.5334/ijic.3588}\\ 
-2018 & Miao Cai, Echu Liu, Hongbing Tao, Zhengmin Qian, \underline{\textbf{Xiaojun Lin}}, Zhaohui Cheng (2018). Does Level of Hospital Matter? A Study of Mortality of Acute Myocardial Infarction Patients in Shanxi, China. \emph{American Journal of Medical Quality}, 33(2),185-192. DOI:\href{https://doi.org/10.1177/1062860617708608}{10.1177/1062860617708608}\\ 
-2018 & Manli Wang, Xuemei Han, Haiqing Fang , Chang Xu, \underline{\textbf{Xiaojun Lin}}, Shuxu Xia, Wenhan Yu , Jinlu He , Shuai Jiang, Hongbing Tao (2018). Impact of Health Education on Knowledge and Behaviors toward Infectious Diseases among Students in Gansu Province, China. \emph{BioMed Research International},6397340. DOI:\href{https://doi.org/10.1155/2018/6397340}{10.1155/2018/6397340} \\
-2017 &  \underline{\textbf{Xiaojun Lin}}, Miao Cai, Hongbing Tao, Echu Liu, Zhaohui Cheng, Chang Xu, Manli Wang, Shuxu Xia, Tianyu Jiang (2017). Insurance Status, Inhospital Mortality and Length of Stay in Hospitalised Patients in Shanxi, China: A Cross-sectional Study. \emph{BMJ Open},7(7),e015884. DOI:\href{https://doi.org/10.1136/bmjopen-2017-015884}{10.1136/bmjopen-2017-015884}\\
-2017 & Manli Wang, Haiqing Fang, Hongbing Tao, Zhaohui Cheng, \underline{\textbf{Xiaojun Lin}}, Miao Cai, Chang Xu, Shuai Jiang (2017). Bootstrapping Data Envelopment Analysis of Efficiency and Productivity of County Public Hospitals in Eastern, Central, and Western China after the public hospital reform. \emph{Journal of Huazhong University of Science and Technology [Medical Sciences]},37(5),681-692. DOI:\href{https://doi.org/10.1007/s11596-017-1789-6}{10.1007/s11596-017-1789-6}\\
-2016 &  \underline{\textbf{Xiaojun Lin}}, Hongbing Tao, Miao Cai, Aihua Liao, Zhaohui Cheng, Haifeng Lin (2016). A Systematic Review and Meta-analysis of the Relationship between Hospital Volume and the Outcomes of Percutaneous Coronary Intervention.  \emph{Medicine},95(5),e2687. DOI:\href{https://doi.org/10.1097/MD.0000000000002687}{10.1097/MD.0000000000002687}\\
-2016 &  Zhaohui Cheng, Miao Cai, Hongbing Tao, Zhifei He, \underline{\textbf{Xiaojun Lin}}, Haifeng Lin, Yuling Zuo (2016). Efficiency and Productivity Measurement of Rural Township Hospitals in China: A Bootstrapping Data Envelopment Analysis. \emph{BMJ Open},6(11),e011911. DOI:\href{https://doi.org/10.1136/bmjopen-2016-011911}{10.1136/bmjopen-2016-011911}\\
-2015 & Zhaohui Cheng, Hongbing Tao, Miao Cai, Haifeng Lin, \underline{\textbf{Xiaojun Lin}}, Qin Shu, Ru-ning Zhang (2016). Technical Efficiency and Productivity of Chinese County Hospitals: An Exploratory Study in Henan Province, China. \emph{BMJ Open},5(9),e007267. DOI:\href{https://doi.org/10.1136/bmjopen-2014007267}{10.1136/bmjopen-2014007267}\\ 
+
+2018 & \underline{\textbf{Xiaojun Lin}}, Miao Cai, John Fu, Kevin He, Tianyu Jiang, Wei Lu, Ziling Ni, Hongbing Tao (2018). Does Hospital Competition Harm Inpatient Quality? Empirical Evidence from Shanxi, China. \emph{International Journal of Environmental Research and Public Health}, 15(10),2283. DOI: \href{https://doi.org/10.3390/ijerph15102283}{10.3390/ijerph15102283}\\[5pt]
+
+2018 & Chang Xu, Qiang Fu, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Manli Wang, Shuxu Xia, Haoling Xiong (2018). Effect of Cesarean Section on the Severity of Postpartum Hemorrhage in Chinese Women: The Shanxi Study. \emph{Current Medical Science},38(4),618-625. DOI: \href{https://doi.org/10.1007/s11596-018-1922-1}{10.1007/s11596-018-1922-1}\\[5pt]
+
+2018 & Miao Cai, Echu Liu, Hongbing Tao, Zhengmin Qian, Qiang (John) Fu, \underline{\textbf{Xiaojun Lin}}, Manli Wang, Chang Xu, Ziling Ni (2018). Does A Medical Consortium Influence Health Outcomes of Hospitalized Cancer Patients? An Integrated Care Model in Shanxi, China, \emph{International Journal of Integrated Care},18(2),7. DOI: \href{https://doi.org/10.5334/ijic.3588}{10.5334/ijic.3588}\\[5pt]
+
+2018 & Miao Cai, Echu Liu, Hongbing Tao, Zhengmin Qian, \underline{\textbf{Xiaojun Lin}}, Zhaohui Cheng (2018). Does Level of Hospital Matter? A Study of Mortality of Acute Myocardial Infarction Patients in Shanxi, China. \emph{American Journal of Medical Quality}, 33(2),185-192. DOI:\href{https://doi.org/10.1177/1062860617708608}{10.1177/1062860617708608}\\[5pt] 
+
+2018 & Manli Wang, Xuemei Han, Haiqing Fang , Chang Xu, \underline{\textbf{Xiaojun Lin}}, Shuxu Xia, Wenhan Yu , Jinlu He , Shuai Jiang, Hongbing Tao (2018). Impact of Health Education on Knowledge and Behaviors toward Infectious Diseases among Students in Gansu Province, China. \emph{BioMed Research International},6397340. DOI:\href{https://doi.org/10.1155/2018/6397340}{10.1155/2018/6397340}\\[5pt]
+
+2017 &  \underline{\textbf{Xiaojun Lin}}, Miao Cai, Hongbing Tao, Echu Liu, Zhaohui Cheng, Chang Xu, Manli Wang, Shuxu Xia, Tianyu Jiang (2017). Insurance Status, Inhospital Mortality and Length of Stay in Hospitalised Patients in Shanxi, China: A Cross-sectional Study. \emph{BMJ Open},7(7),e015884. DOI:\href{https://doi.org/10.1136/bmjopen-2017-015884}{10.1136/bmjopen-2017-015884}\\[5pt]
+
+2017 & Manli Wang, Haiqing Fang, Hongbing Tao, Zhaohui Cheng, \underline{\textbf{Xiaojun Lin}}, Miao Cai, Chang Xu, Shuai Jiang (2017). Bootstrapping Data Envelopment Analysis of Efficiency and Productivity of County Public Hospitals in Eastern, Central, and Western China after the public hospital reform. \emph{Journal of Huazhong University of Science and Technology [Medical Sciences]},37(5),681-692. DOI:\href{https://doi.org/10.1007/s11596-017-1789-6}{10.1007/s11596-017-1789-6}\\[5pt]
+
+2016 &  \underline{\textbf{Xiaojun Lin}}, Hongbing Tao, Miao Cai, Aihua Liao, Zhaohui Cheng, Haifeng Lin (2016). A Systematic Review and Meta-analysis of the Relationship between Hospital Volume and the Outcomes of Percutaneous Coronary Intervention.  \emph{Medicine},95(5),e2687. DOI:\href{https://doi.org/10.1097/MD.0000000000002687}{10.1097/MD.0000000000002687}\\[5pt]
+
+2016 &  Zhaohui Cheng, Miao Cai, Hongbing Tao, Zhifei He, \underline{\textbf{Xiaojun Lin}}, Haifeng Lin, Yuling Zuo (2016). Efficiency and Productivity Measurement of Rural Township Hospitals in China: A Bootstrapping Data Envelopment Analysis. \emph{BMJ Open},6(11),e011911. DOI:\href{https://doi.org/10.1136/bmjopen-2016-011911}{10.1136/bmjopen-2016-011911}\\[5pt]
+
+2015 & Zhaohui Cheng, Hongbing Tao, Miao Cai, Haifeng Lin, \underline{\textbf{Xiaojun Lin}}, Qin Shu, Ru-ning Zhang (2016). Technical Efficiency and Productivity of Chinese County Hospitals: An Exploratory Study in Henan Province, China. \emph{BMJ Open},5(9),e007267. DOI:\href{https://doi.org/10.1136/bmjopen-2014007267}{10.1136/bmjopen-2014007267}\\[5pt] 
 \end{longtable}
 
 \subsection*{Conference Abstracts}
 \begin{longtable}{r p{13cm}}
-2018 & \underline{\textbf{Xiaojun Lin}}, Xiaojun Lin, Tianyu Jiang, Kevin He, Wei Lu, Ziling Ni, Hongbing Tao (2018). Exploring the Effect of Weekend Admissions to Hospital on Health Outcomes of Inpatients with Acute Myocardial Infarction in Shanxi, China: A Longitudinal Study. \emph{The Lancet-CAMS Health Summit},392(S1),S19. DOI:\href{https://doi.org/10.1016/S0140-6736(18)32648-5}{10.1016/S0140-6736(18)32648-5}\\
-2018 & Ziling Ni, \underline{\textbf{Xiaojun Lin}}, Wei Lu, Tianyu Jiang, Ying Wang, Jinlu He, Hongbing Tao (2018). Hospital Volume and Outcomes for Acute Myocardial Infarction Inpatients in Shanxi, China: An Observation Study.  \emph{The Lancet-CAMS Health Summit},392(S1),S36. DOI:\href{https://doi.org/10.1016/S0140-6736(18)32665-5}{10.1016/S0140-6736(18)32665-5}\\
-2016 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao, Miao Cai, Zhaohui Cheng, Manli Wang, Chang Xu, Haifeng Lin, Li Jin (2016). Health Insurance and Quality and Efficiency of Medical Care for Patients with Acute Myocardial Infarction in Tertiary Hospitals in Shanxi, China: A Retrospective Study. \emph{The Lancet-CAMS Health Summit},388(S1),S70. DOI:\href{https://doi.org/10.1016/S0140-6736(16)31997-3}{10.1016/S0140-6736(16)31997-3}\\
-2016 & Manli Wang, Hongbing Tao, Haiqing Fang, Zhaohui Cheng, Miao Cai, \underline{\textbf{Xiaojun Lin}}, Chang Xu (2016). Patient Safety Culture in Surgical Departments versus Other Departments in County Hospitals of Hubei Province, China: A Cross-sectional Survey.  \emph{The Lancet-CAMS Health Summit},388(S1),S71. DOI:\href{https://doi.org/10.1016/S0140-6736(16)31998-5}{10.1016/S0140-6736(16)31998-5}\\
-2015 & Zhaohui Cheng, Hongbing Tao, Miao Cai, Haifeng Lin, \underline{\textbf{Xiaojun Lin}}, Qin Shu, Runing Zhang (2015). Using A Two-stage Data Envelopment Analysis to Estimate the Efficiency of County Hospitals in China: A Panel Data Study.  \emph{The Lancet-CAMS Health Summit},386(S1),S64. DOI:\href{https://doi.org/10.1016/S0140-6736(15)00645-5}{10.1016/S0140-6736(15)00645-5}\\	
+2018 & \underline{\textbf{Xiaojun Lin}}, Xiaojun Lin, Tianyu Jiang, Kevin He, Wei Lu, Ziling Ni, Hongbing Tao (2018). Exploring the Effect of Weekend Admissions to Hospital on Health Outcomes of Inpatients with Acute Myocardial Infarction in Shanxi, China: A Longitudinal Study. \emph{The Lancet-CAMS Health Summit},392(S1),S19. DOI:\href{https://doi.org/10.1016/S0140-6736(18)32648-5}{10.1016/S0140-6736(18)32648-5}\\[5pt]
+
+2018 & Ziling Ni, \underline{\textbf{Xiaojun Lin}}, Wei Lu, Tianyu Jiang, Ying Wang, Jinlu He, Hongbing Tao (2018). Hospital Volume and Outcomes for Acute Myocardial Infarction Inpatients in Shanxi, China: An Observation Study.  \emph{The Lancet-CAMS Health Summit},392(S1),S36. DOI:\href{https://doi.org/10.1016/S0140-6736(18)32665-5}{10.1016/S0140-6736(18)32665-5}\\[5pt]
+
+2016 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao, Miao Cai, Zhaohui Cheng, Manli Wang, Chang Xu, Haifeng Lin, Li Jin (2016). Health Insurance and Quality and Efficiency of Medical Care for Patients with Acute Myocardial Infarction in Tertiary Hospitals in Shanxi, China: A Retrospective Study. \emph{The Lancet-CAMS Health Summit},388(S1),S70. DOI:\href{https://doi.org/10.1016/S0140-6736(16)31997-3}{10.1016/S0140-6736(16)31997-3}\\[5pt]
+
+2016 & Manli Wang, Hongbing Tao, Haiqing Fang, Zhaohui Cheng, Miao Cai, \underline{\textbf{Xiaojun Lin}}, Chang Xu (2016). Patient Safety Culture in Surgical Departments versus Other Departments in County Hospitals of Hubei Province, China: A Cross-sectional Survey.  \emph{The Lancet-CAMS Health Summit},388(S1),S71. DOI:\href{https://doi.org/10.1016/S0140-6736(16)31998-5}{10.1016/S0140-6736(16)31998-5}\\[5pt]
+
+2015 & Zhaohui Cheng, Hongbing Tao, Miao Cai, Haifeng Lin, \underline{\textbf{Xiaojun Lin}}, Qin Shu, Runing Zhang (2015). Using A Two-stage Data Envelopment Analysis to Estimate the Efficiency of County Hospitals in China: A Panel Data Study.  \emph{The Lancet-CAMS Health Summit},386(S1),S64. DOI:\href{https://doi.org/10.1016/S0140-6736(15)00645-5}{10.1016/S0140-6736(15)00645-5}\\[5pt]
 \end{longtable}
 
 
 \subsection*{Chinese Peer-reviewed Journal Articles}
 \begin{longtable}{r p{13cm}}
 
-2019 & Tianyu Jiang, Hongbing Tao, Wei Lu, Yitian Huang, Nan Shi, \underline{\textbf{Xiaojun Lin}} (2019). Using Bootstrap-Malmquist Model to Evaluate the Operational Efficiency of Tertiary Public Hospitals in Shanxi.  \emph{Chinese Hospital Management} (forthcoming) \\
-2018 & Nan Shi, Hongbing Tao, Yitian Huang, Tianyu Jiang, Chang Xu, \underline{\textbf{Xiaojun Lin}} (2018). Evaluation of cesarean delivery rate at tertiary general hospitals based on risk adjustment. \emph{Chinese Journal of Hospital Administration},34(12),1017-1021. \href{http://www.wanfangdata.com.cn/details/detail.do?_type=perio&id=zhyygl201812011}{Wanfang} \\
-2018 & Yitian Huang, Hongbing Tao, Tianyu Jiang, Nan Shi, \underline{\textbf{Xiaojun Lin}}, Manli Wang, Wenhan Yu (2018). The Prerequisites and Construction of Medical Consortium in China. \emph{Chinese Hospital Management},37(9),22-24. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2018&filename=YYGL201809005&v=MjIxMjdlWnVadEZpRGxWNzNPUERUTVlyRzRIOW5NcG85RllZUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSTEs=}{CNKI} \\
-2017 & Miao Cai, Hongbing Tao, Echu Liu, Zhaohui Cheng, \underline{\textbf{Xiaojun Lin}} (2017). Influence of Market Competition on Hospital Technical Efficiencies: Based on Empirical Evidence from Henan and Jiangsu Provinces. \emph{Chinese Hospital Management},37(6),22-24. 
-\href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=YYGL201706012&v=MzEzMTREbFZMdkFQRFRNWXJHNEg5Yk1xWTlFWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00xRnJDVVJMS2VadVp0Rmk=}{CNKI}\\
-2017 & Jinlu He, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Ting Xiao, Miao Cai (2017). A Comparative Study on Medical Quality among Hospitals of Different Ownerships. \emph{Chinese Health Quality Management},24(4),18-20. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=WSJG201704010&v=MTU5NzM0OUVaSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVp1WnRGaURtVTcvTU1qN0JhYkc0SDliTXE=}{CNKI}\\
-2017 & Shuxu Xia, Hongbing Tao, Liting Du, Miao Cai, \underline{\textbf{Xiaojun Lin}}, Haifeng Lin (2017). Problems and Countermeasures in Quality and Safety of Mobile Health Service in the Context of "Internet Plus". \emph{Chinese Health Quality Management},24(3),23-26. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=WSJG201703030&v=MjQwMTVHWklSOGVYMUx1eFlTN0RoMVQzcVRyV00xRnJDVVJMS2VadVp0RmlEbVViL01NajdCYWJHNEg5Yk1ySTk=}{CNKI}\\
-2017 & Wenhan Yu, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Manli Wang (2017). Relations of Workload of Medical Staff with Medical Quality and Safety. \emph{Chinese Health Quality Management},24(1),82-85. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=WSJG201701013&v=MDI5NThSOGVYMUx1eFlTN0RoMVQzcVRyV00xRnJDVVJMS2VadVp0RmlEbVY3M09NajdCYWJHNEg5Yk1ybzlFWjQ=}{CNKI}\\
-2016 & Pan Zhang, Hongbing Tao,  \underline{\textbf{Xiaojun Lin}}, Miao Cai (2016). Status Quos and Quality and Safety Problems of the Medical associations in China and the Countermeasures. \emph{Chinese Hospital Management},36(11),52-54. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2016&filename=YYGL201611027&v=MjM5Mjl1WnNGaXZtVTcvS1BEVE1Zckc0SDlmTnJvOUhZNFI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVo=}{CNKI}\\
-2016 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao (2016). Development of the relationship between hospital service capacity and quality of care. \emph{Chinese Journal of Hospital Administration},32(2),108-110. \href{http://www.wanfangdata.com.cn/details/detail.do?_type=perio&id=zhyygl201602010}{Wanfang}\\
-2016 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao, Shijing Zhang, Zhaohui Cheng, Miao Cai, Haitong Liu, Haifeng Lin (2016). A Visualization Analysis of the Evolution of Hospital Efficiency. \emph{Chinese Hospital Management},36(4),27-29. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2016&filename=YYGL201604015&v=MjM5ODRSTEtlWnVadEZpRG5VNy9MUERUTVlyRzRIOWZNcTQ5RVlZUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1U=}{CNKI}\\
-2016 & Haifeng Lin, Hongbing Tao, Zhaohui Cheng, \underline{\textbf{Xiaojun Lin}}, Miao Cai (2016). Traditional Chinese hospital Efficiency of healthcare resource utilization and influencing factors in Henan, China. \emph{Chinese Journal of Hospital Administration},32(2),117-120. \href{http://www.wanfangdata.com.cn/details/detail.do?_type=perio&id=zhyygl201602013}{Wanfang}\\
-2015 & Haifeng Lin, Hongbing Tao, Zhaohui Cheng, Miao Cai, \underline{\textbf{Xiaojun Lin}} (2016). The efficiency evaluation of obstetrical departments of hospitals in Wuhan and the factors affecting their efficiency. \emph{Chinese Journal of Medical Management Sciences},5(5),9-13. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2015&filename=YLGL201505004&v=MjkxODIxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVp1WnNGaXZtVkx2QVBDSE1Zckc0SDlUTXFvOUZZSVI4ZVg=}{CNKI}\\
-2014 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao. Current situation and difference analysis of domestic and foreign medical safety management. \emph{Chinese Medical Administration Sciences},4(1),5357. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFD2014&filename=YLGL201401019&v=MjQzMzVUcldNMUZyQ1VSTEtlWnVadEZpRG5WNy9JUENITVlyRzRIOVhNcm85RWJZUjhlWDFMdXhZUzdEaDFUM3E=}{CNKI}\\
-2013 & Miao Cai, Xiaobing Xu, Haiyang Cai, Rui Chang, \underline{\textbf{Xiaojun Lin}}, Yanran Huang (2013). Analysis on Different Approaches to Identifying Medical Adverse Events and Intervention Measures. \emph{Medicine and Society},26(9),20–22. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDHIS2&filename=YXSH201309007&v=MDAwNDFyQ1VSTEtlWnVac0Zpdm1XcnZOUERYWVpyRzRIOUxNcG85Rlk0UjhlWDFMdXhZUzdEaDFUM3FUcldNMUY=}{CNKI}\\
-2013 & Miao Cai, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Xiaobing Xu, Haiyang Cai, Feixiang Chen (2013). Factors Impeding Reporting of Medical Adverse Events among Doctors and Nurses. \emph{Chinese Health Quality Management},20(5),41-43. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDHIS2&filename=WSJG201305024&v=Mjc4MDIxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVp1WnNGaXZuVXJ6Tk1qN0JhYkc0SDlMTXFvOUhZSVI4ZVg=}{CNKI}\\
+2019 & Tianyu Jiang, Hongbing Tao, Wei Lu, Yitian Huang, Nan Shi, \underline{\textbf{Xiaojun Lin}} (2019). Using Bootstrap-Malmquist Model to Evaluate the Operational Efficiency of Tertiary Public Hospitals in Shanxi.  \emph{Chinese Hospital Management},39(2):34-36. \\[5pt]
+
+2018 & Nan Shi, Hongbing Tao, Yitian Huang, Tianyu Jiang, Chang Xu, \underline{\textbf{Xiaojun Lin}} (2018). Evaluation of cesarean delivery rate at tertiary general hospitals based on risk adjustment. \emph{Chinese Journal of Hospital Administration},34(12),1017-1021. \href{http://www.wanfangdata.com.cn/details/detail.do?_type=perio&id=zhyygl201812011}{Wanfang} \\[5pt]
+
+2018 & Yitian Huang, Hongbing Tao, Tianyu Jiang, Nan Shi, \underline{\textbf{Xiaojun Lin}}, Manli Wang, Wenhan Yu (2018). The Prerequisites and Construction of Medical Consortium in China. \emph{Chinese Hospital Management},37(9),22-24. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2018&filename=YYGL201809005&v=MjIxMjdlWnVadEZpRGxWNzNPUERUTVlyRzRIOW5NcG85RllZUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1VSTEs=}{CNKI} \\[5pt]
+
+2017 & Miao Cai, Hongbing Tao, Echu Liu, Zhaohui Cheng, \underline{\textbf{Xiaojun Lin}} (2017). Influence of Market Competition on Hospital Technical Efficiencies: Based on Empirical Evidence from Henan and Jiangsu Provinces. \emph{Chinese Hospital Management},37(6),22-24. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=YYGL201706012&v=MzEzMTREbFZMdkFQRFRNWXJHNEg5Yk1xWTlFWm9SOGVYMUx1eFlTN0RoMVQzcVRyV00xRnJDVVJMS2VadVp0Rmk=}{CNKI}\\[5pt]
+
+2017 & Jinlu He, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Ting Xiao, Miao Cai (2017). A Comparative Study on Medical Quality among Hospitals of Different Ownerships. \emph{Chinese Health Quality Management},24(4),18-20. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=WSJG201704010&v=MTU5NzM0OUVaSVI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVp1WnRGaURtVTcvTU1qN0JhYkc0SDliTXE=}{CNKI}\\[5pt]
+
+2017 & Shuxu Xia, Hongbing Tao, Liting Du, Miao Cai, \underline{\textbf{Xiaojun Lin}}, Haifeng Lin (2017). Problems and Countermeasures in Quality and Safety of Mobile Health Service in the Context of "Internet Plus". \emph{Chinese Health Quality Management},24(3),23-26. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=WSJG201703030&v=MjQwMTVHWklSOGVYMUx1eFlTN0RoMVQzcVRyV00xRnJDVVJMS2VadVp0RmlEbVViL01NajdCYWJHNEg5Yk1ySTk=}{CNKI}\\[5pt]
+
+2017 & Wenhan Yu, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Manli Wang (2017). Relations of Workload of Medical Staff with Medical Quality and Safety. \emph{Chinese Health Quality Management},24(1),82-85. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2017&filename=WSJG201701013&v=MDI5NThSOGVYMUx1eFlTN0RoMVQzcVRyV00xRnJDVVJMS2VadVp0RmlEbVY3M09NajdCYWJHNEg5Yk1ybzlFWjQ=}{CNKI}\\[5pt]
+
+2016 & Pan Zhang, Hongbing Tao,  \underline{\textbf{Xiaojun Lin}}, Miao Cai (2016). Status Quos and Quality and Safety Problems of the Medical associations in China and the Countermeasures. \emph{Chinese Hospital Management},36(11),52-54. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2016&filename=YYGL201611027&v=MjM5Mjl1WnNGaXZtVTcvS1BEVE1Zckc0SDlmTnJvOUhZNFI4ZVgxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVo=}{CNKI}\\[5pt]
+
+2016 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao (2016). Development of the relationship between hospital service capacity and quality of care. \emph{Chinese Journal of Hospital Administration},32(2),108-110. \href{http://www.wanfangdata.com.cn/details/detail.do?_type=perio&id=zhyygl201602010}{Wanfang}\\[5pt]
+
+2016 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao, Shijing Zhang, Zhaohui Cheng, Miao Cai, Haitong Liu, Haifeng Lin (2016). A Visualization Analysis of the Evolution of Hospital Efficiency. \emph{Chinese Hospital Management},36(4),27-29. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2016&filename=YYGL201604015&v=MjM5ODRSTEtlWnVadEZpRG5VNy9MUERUTVlyRzRIOWZNcTQ5RVlZUjhlWDFMdXhZUzdEaDFUM3FUcldNMUZyQ1U=}{CNKI}\\[5pt]
+
+2016 & Haifeng Lin, Hongbing Tao, Zhaohui Cheng, \underline{\textbf{Xiaojun Lin}}, Miao Cai (2016). Traditional Chinese hospital Efficiency of healthcare resource utilization and influencing factors in Henan, China. \emph{Chinese Journal of Hospital Administration},32(2),117-120. \href{http://www.wanfangdata.com.cn/details/detail.do?_type=perio&id=zhyygl201602013}{Wanfang}\\[5pt]
+
+2015 & Haifeng Lin, Hongbing Tao, Zhaohui Cheng, Miao Cai, \underline{\textbf{Xiaojun Lin}} (2016). The efficiency evaluation of obstetrical departments of hospitals in Wuhan and the factors affecting their efficiency. \emph{Chinese Journal of Medical Management Sciences},5(5),9-13. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDLAST2015&filename=YLGL201505004&v=MjkxODIxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVp1WnNGaXZtVkx2QVBDSE1Zckc0SDlUTXFvOUZZSVI4ZVg=}{CNKI}\\[5pt]
+
+2014 & \underline{\textbf{Xiaojun Lin}}, Hongbing Tao. Current situation and difference analysis of domestic and foreign medical safety management. \emph{Chinese Medical Administration Sciences},4(1),5357. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFD2014&filename=YLGL201401019&v=MjQzMzVUcldNMUZyQ1VSTEtlWnVadEZpRG5WNy9JUENITVlyRzRIOVhNcm85RWJZUjhlWDFMdXhZUzdEaDFUM3E=}{CNKI}\\[5pt]
+
+2013 & Miao Cai, Xiaobing Xu, Haiyang Cai, Rui Chang, \underline{\textbf{Xiaojun Lin}}, Yanran Huang (2013). Analysis on Different Approaches to Identifying Medical Adverse Events and Intervention Measures. \emph{Medicine and Society},26(9),20–22. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDHIS2&filename=YXSH201309007&v=MDAwNDFyQ1VSTEtlWnVac0Zpdm1XcnZOUERYWVpyRzRIOUxNcG85Rlk0UjhlWDFMdXhZUzdEaDFUM3FUcldNMUY=}{CNKI}\\[5pt]
+
+2013 & Miao Cai, Hongbing Tao, \underline{\textbf{Xiaojun Lin}}, Xiaobing Xu, Haiyang Cai, Feixiang Chen (2013). Factors Impeding Reporting of Medical Adverse Events among Doctors and Nurses. \emph{Chinese Health Quality Management},20(5),41-43. \href{http://kns.cnki.net/KCMS/detail/detail.aspx?dbcode=CJFQ&dbname=CJFDHIS2&filename=WSJG201305024&v=Mjc4MDIxTHV4WVM3RGgxVDNxVHJXTTFGckNVUkxLZVp1WnNGaXZuVXJ6Tk1qN0JhYkc0SDlMTXFvOUhZSVI4ZVg=}{CNKI}\\[5pt]
 \end{longtable}
 
 
 \subsection*{Working Papers}
 \begin{longtable}{r p{13cm}}
-2018 & \underline{\textbf{Xiaojun Lin}}, Jeremy C. Green, Hong Xian, Miao Cai, Hongbing Tao. Effect of Weekend and Holiday Admission on Mortality: A Cross-sectional Study of Patients with Acute Myocardial Infarction in Shanxi, China. (under review)\\
-2018 & \underline{\textbf{Xiaojun Lin}}, Kenton Johnston, Miao Cai. Does the Medical Consortium Reform Improve Hospital Efficiency? Evidence from Secondary General Hospitals in Shanxi, China, 2013-2017.\\
-2018 & Ziling Ni, \underline{\textbf{Xiaojun Lin}}, Tianyu Jiang, Wei Lu, Miao Cai, Ying Wang, Hongbing Tao. Hospital Volume and Outcomes for Acute Myocardial Infarction Inpatients in Shanxi, China: A Cross-sectional Study. (under review)\\
-2018 & Ziling Ni, Qiang Fu, \underline{\textbf{Xiaojun Lin}}, Ying Wang, Wei Lu, Nan Shi, Tianyu Jiang, Hongbing Tao. The Impact of Zero Mark-up Drug Policy on Hospitalization Costs for Inpatients with Pneumonia in China. (under review)\\
+2018 & \underline{\textbf{Xiaojun Lin}}, Jeremy C. Green, Hong Xian, Miao Cai, Hongbing Tao. Effect of Weekend and Holiday Admission on Mortality: A Cross-sectional Study of Patients with Acute Myocardial Infarction in Shanxi, China. (under review)\\[5pt]
+
+2018 & \underline{\textbf{Xiaojun Lin}}, Kenton Johnston, Miao Cai. Does the Medical Consortium Reform Improve Hospital Efficiency? Evidence from Secondary General Hospitals in Shanxi, China, 2013-2017.\\[5pt]
+
+2018 & Ziling Ni, \underline{\textbf{Xiaojun Lin}}, Tianyu Jiang, Wei Lu, Miao Cai, Ying Wang, Hongbing Tao. Hospital Volume and Outcomes for Acute Myocardial Infarction Inpatients in Shanxi, China: A Cross-sectional Study. (under review)\\[5pt]
+
+2018 & Ziling Ni, Qiang Fu, \underline{\textbf{Xiaojun Lin}}, Ying Wang, Wei Lu, Nan Shi, Tianyu Jiang, Hongbing Tao. The Impact of Zero Mark-up Drug Policy on Hospitalization Costs for Inpatients with Pneumonia in China. (under review)\\[5pt]
 \end{longtable}
 
 
 %Honors and Awards
 \section{Honors and Awards}
 \begin{tabular}{rll}
-2018 &  \textit{Hubei Science and Technology Progress Award } & Hubei Provincial Science and Technology Agency\\
-& \textit{(Second Class, No.8)} & \\
+2018 &  \textit{Hubei Science and Technology Progress} & Hubei Provincial Science and Technology Agency\\
+& \textit{Award (Second Class, No.8)} & \\
 2017 & \textit{Zhixing Scholar (Third Class)} & Huazhong University of Science and Technology\\
 2016 & \textit{National Graduate Scholarship} & Huazhong University of Science and Technology\\
 2016 & \textit{Merit Student} &  Huazhong University of Science and Technology\\
@@ -178,9 +210,15 @@ Health Policy, Health Economics
 %Participated projects
 \section{Participated Projects}
 \begin{tabular}{r p{12cm}}
-2018-2022 & \emph{National Natural Science Foundation of China } \textbf{Project:} Formation Mechanism and Strategies of Management for Medical Service Efficiency of Public General Hospitals in the Context of Global Budget.  \textbf{PI:} Hongbing Tao (Ph.D. advisor); \textbf{Role: }investigator; \textbf{Work:} Research design.\\
-2015-2018 & \emph{National Natural Science Foundation of China }  \textbf{Project:} Performance Evaluation and Influencing Factors for the Closed Type Medical Association Based on Structural Equation. \textbf{PI:} Hongbing Tao (Ph.D. advisor); \textbf{Role:} investigator; \textbf{Work:} Research design, data collection, data analysis, and report writing.\\
-2012-2015 & \emph{National Natural Science Foundation of China } \textbf{Project:} Construction of Evaluation Model and Managing Pathways of Inpatient Hospital Resources Utilization in Urban General Hospitals. \textbf{PI:} Hongbing Tao (Ph.D. advisor); \textbf{Role:} investigator; \textbf{Work:} data analysis and report writing.
+2018-2022 & \emph{National Natural Science Foundation of China } \\
+		  &\textbf{Project:} Formation Mechanism and Strategies of Management for Medical Service Efficiency of Public General Hospitals in the Context of Global Budget.  \textbf{PI:} Hongbing Tao (Ph.D. advisor); \\
+		  & \textbf{Role: }investigator; \textbf{Work:} Research design.\\[5pt]
+2015-2018 & \emph{National Natural Science Foundation of China }  \\
+		  & \textbf{Project:} Performance Evaluation and Influencing Factors for the Closed Type Medical Association Based on Structural Equation. \textbf{PI:} Hongbing Tao (Ph.D. advisor); \\
+		  & \textbf{Role:} investigator; \textbf{Work:} Research design, data collection, data analysis, and report writing.\\[5pt]
+2012-2015 & \emph{National Natural Science Foundation of China } \\
+          & \textbf{Project:} Construction of Evaluation Model and Managing Pathways of Inpatient Hospital Resources Utilization in Urban General Hospitals. \textbf{PI:} Hongbing Tao (Ph.D. advisor); \\
+          & \textbf{Role:} investigator; \textbf{Work:} data analysis and report writing.\\[5pt]
 \end{tabular}
 
 %Programing Languages
@@ -196,7 +234,7 @@ Health Policy, Health Economics
 
 %REVIEWING ACTIVITIES
 \section{Reviewing Activities}
-Manuscript Referee for \emph{International Journal for Equity in Health}\\
+Referee for \emph{International Journal for Equity in Health}\\
 
 %PERSONAL INFORMATION
 %\section{Personal Information}
