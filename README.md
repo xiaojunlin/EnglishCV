@@ -1,3 +1,4 @@
 # Academic CV
 
-This repo contains my academic CV in latex, available as a [PDF](cv-gboeing.pdf). It generally conforms to Karen Kelsky's guidelines, with some tweaks for clearer information presentation and nicer typography.
+This repo contains my academic CV in latex, available as a [PDF](https://github.com/xiaojunlin/EnglishCV/blob/master/cv-xiaojun-en.pdf). It comes from [Geoff Boeing's awesome CV](https://github.com/gboeing/cv).
+
