@@ -1,0 +1,316 @@
+% Dr. Geoff Boeing - Curriculum Vitae
+% Copyright 2020 Geoff Boeing
+% Email: boeing@usc.edu
+% Web: https://geoffboeing.com/
+% Repo: https://github.com/gboeing/cv
+
+\documentclass[12pt,letterpaper]{report}
+
+\usepackage[T1]{fontenc} % output T1 font encoding (8-bit) so accented characters are a single glyph
+\usepackage[utf8]{inputenc} % allow input of utf-8 encoded characters
+\usepackage[strict,autostyle]{csquotes} % smart and nestable quote marks
+\usepackage[USenglish]{babel} % automatically regionalize hyphens, quote marks, etc
+\usepackage{microtype} % improves text appearance with kerning, etc
+\usepackage{datetime} % enable formatting of date output
+\usepackage{tabto} % make nice tabbing
+\usepackage{hyperref} % enable hyperlinks and pdf metadata
+\usepackage{geometry} % manually set page margins
+\usepackage{enumitem} % enumerate with [resume] option
+\usepackage{titlesec} % allow custom section fonts
+
+% what is your name?
+\newcommand{\myname}{Xiaojun Lin}
+
+% define a default font face and set it as the body font
+\usepackage{crimson} % document's serif font
+\usepackage{helvet}  % document's sans serif font
+
+% define how far to tab for list items with left-aligned date - different font faces need different widths
+\newcommand{\listtabwidth}{1.75cm}
+
+% set name font to title the document
+\newcommand{\namefont}[1]{{\normalfont\bfseries\Huge{#1}}}
+
+% set section heading fonts and before/after spacing
+\SetTracking{encoding=*}{20}
+\titleformat{\section}{\sffamily\small\bfseries\lsstyle\uppercase}{}{}{}{}
+\titlespacing{\section}{0pt}{24pt plus 4pt minus 2pt}{12pt plus 2pt minus 2pt}
+
+% set subsection heading fonts and before/after spacing
+\titleformat{\subsection}{\sffamily\footnotesize\bfseries}{}{}{}{}
+\titlespacing{\subsection}{0pt}{12pt plus 4pt minus 2pt}{8pt plus 2pt minus 2pt}
+
+% set page margins
+\geometry{body={6.5in, 9.0in},
+    left=1.0in,
+    top=1.0in}
+
+% prevent paragraph indentation
+\setlength\parindent{0em}
+
+% define space between list items
+\newcommand{\listitemspace}{0.15em}
+
+% make unordered lists without bullets and use compact spacing
+\renewenvironment{itemize}
+{\begin{list}{}{\setlength{\leftmargin}{0em}
+            \setlength{\parskip}{0em}
+            \setlength{\itemsep}{\listitemspace}
+            \setlength{\parsep}{\listitemspace}}}
+    {\end{list}}
+
+% make tabbed lists so content is left-aligned next to years
+\TabPositions{\listtabwidth}
+\newlist{tablist}{description}{3}
+\setlist[tablist]{leftmargin=\listtabwidth,
+    labelindent=0em,
+    topsep=0em,
+    partopsep=0em,
+    itemsep=\listitemspace,
+    parsep=\listitemspace,
+    font=\normalfont}
+
+% print the month and year only when using \today
+\newdateformat{monthyeardate}{\monthname[\THEMONTH] \THEYEAR}
+
+% define hyperlink appearance and metadata for pdf properties
+\hypersetup{
+    colorlinks  = true,
+    urlcolor    = black,
+    pdfauthor   = {\myname},
+    pdfkeywords = {health policy, health economics, health system},
+    pdftitle    = {\myname: Curriculum Vitae},
+    pdfsubject  = {Curriculum Vitae},
+    pdfpagemode = UseNone
+}
+
+\begin{document}
+    \raggedright
+
+    % display name as the document title
+    \namefont{\myname}
+
+    % contact info
+    \vspace{1em}
+    \begin{minipage}[t]{0.68\textwidth}
+    	\textit{Postodoctoral Research Fellow}  \\
+        Department of Health Policy and Management \\
+        West China School of Public Health \\
+       	Sichuan University
+        %\\Los Angeles, California, USA
+    \end{minipage}
+    \begin{minipage}[t]{0.31\textwidth}
+        Email: \href{mailto:linxiaojun@scu.edu.cn}{linxiaojun@scu.edu.cn} \\
+        Website: \href{https://scholar.google.com/citations?user=ZBGYTowAAAAJ&hl=en}{Google Scholar}
+    \end{minipage}
+    \vspace{0.5em}
+
+
+    \section*{Education}
+
+    \begin{tablist}
+
+        \item[Ph.D.] \tab Social Medicine and Health Management, Huazhong University of Science and Technology, China, 2019
+
+        \item[B.S.]  \tab Public Administration,  Huazhong University of Science and Technology, China, 2014
+
+
+    \end{tablist}
+
+
+
+    \section*{Academic Appointments}
+
+    \begin{tablist}
+
+        \item[2019--]   \tab Sichuan University \\
+                             		Postodoctoral Research Fellow, Department of Health Policy and Management\\
+                       
+         \item[2019--]    \tab Sichuan University \\
+         							  Research Fellow, West China Research Centre for Rural Health Development         
+
+    \end{tablist}
+
+
+
+    \section*{Research Areas \& Interests }
+
+    \begin{itemize}
+
+        \item Research Area: Health Policy and Economics
+        \item Research Interests: Quality of Care; Market Structure; Hospital Efficiency
+
+    \end{itemize}
+
+
+
+    \section*{Publications}
+
+    \subsection*{Articles in Peer-Reviewed Journals}
+
+    \begin{tablist}
+    	
+    	\item[2020] \tab Cai, M., Liu, E., Zhang, R., \textbf{Lin, X.},  Rigdon, S.E., Qian, Z., Belue, R., Chang, J.J.\enquote{Comparing the Performance of Charlson and Elixhauser Comorbidity Indices to Predict In-Hospital Mortality Among a Chinese Population. } \textit{Clinical Epidemiology} 12, 307—316. \href{https://doi.org/10.2147/CLEP.S241610}{doi:10.2147/CLEP.S241610}
+    	
+    	\item[2019] \tab Ni, Z.,  \textbf{Lin, X.}, Wang, Y., Jiang, T., Tao, H.\enquote{Hospital volume and outcomes for inpatients with acute myocardial infarction in Shanxi, China: A cross‐sectional study.} \textit{The International Journal of Health Planning and Management} 34(4), 1195–1204. \href{https://doi.org/10.1002/hpm.2787}{doi:10.1002/hpm.2787}
+    	
+    	\item[2018] \tab \textbf{Lin, X.}, Cai, M., Fu, Q., He, K., Jiang, T., Lu, W., Ni, Z. and Tao, H. \enquote{Does hospital competition harm inpatient quality? Empirical evidence from Shanxi, China.} \textit{International Journal of Environmental Research and Public Health} 15 (10), 2283. \href{https://doi.org/10.3390/ijerph15102283}{doi:10.3390/ijerph15102283}
+    	
+    	\item[2018] \tab Xu, C., Fu, Q., Tao, H., \textbf{Lin, X.}, Wang, M., Xia, S., Xiong, H. \enquote{Effect of Cesarean Section on the Severity of Postpartum Hemorrhage in Chinese Women: The Shanxi Study.} \textit{Current Medical Science} 38(4), 618–625. \href{https://doi.org/10.1007/s11596-018-1922-1}{doi:10.1007/s11596-018-1922-1}
+    	
+    	 \item[2018] \tab Cai, M., Liu, E., Tao, H., Qian, Z., Fu, Q.J., \textbf{Lin, X.}, Wang, M., Xu, C., Ni, Z. \enquote{Does a medical consortium influence health outcomes of hospitalized cancer patients? An integrated care model in Shanxi, China.} \textit{International Journal of Integrated Care}  18(2), 1–10. \href{https://doi.org/10.5334/ijic.3588}{doi:10.5334/ijic.3588}
+    	 
+		\item[2018] \tab Wang, M., Han, X., Fang, H., Xu, C., \textbf{Lin, X.}, Xia, S., Yu, W., He, J., Jiang, S., Tao, H. \enquote{Impact of Health Education on Knowledge and Behaviors toward Infectious Diseases among Students in Gansu Province, China.} \textit{BioMed Research International}, 6397340. \href{https://doi.org/10.1155/2018/6397340}{doi:10.1155/2018/6397340}
+		
+		\item[2018] \tab Cai, M., Liu, E., Tao, H., Qian, Z., \textbf{Lin, X.}, Cheng, Z. \enquote{Does Level of Hospital Matter? A Study of Mortality of Acute Myocardial Infarction Patients in Shanxi, China.} \textit{American Journal of Medical Quality}  33(2), 185–192. \href{ https://doi.org/10.1177/1062860617708608}{doi:10.1177/1062860617708608}
+		
+		\item[2017] \tab  \textbf{Lin, X.}, Cai, M., Tao, H., Liu, E., Cheng, Z., Xu, C., Wang, M., Xia, S., Jiang, T. \enquote{Insurance status, inhospital mortality and length of stay in hospitalised patients in Shanxi, China: a cross-sectional study.} \textit{BMJ Open}  7(7), e015884. \href{ https://doi.org/10.1136/bmjopen-2017-015884}{doi:10.1136/bmjopen-2017-015884}
+		   
+		\item[2017] \tab Wang, M., Fang, H., Tao, H., Cheng, Z., \textbf{Lin, X.}, Cai, M., Xu, C., Jiang, S. \enquote{Bootstrapping data envelopment analysis of efficiency and productivity of county public hospitals in Eastern, Central, and Western China after the public hospital reform.} \textit{Current Medical Science}  37(5), 681-692. \href{ https://doi.org/10.1007/s11596-017-1789-6}{doi:10.1007/s11596-017-1789-6}
+    	 
+		\item[2016] \tab \textbf{Lin, X.}, Tao, H., Cai, M., Liao, A., Cheng, Z., Lin, H.\enquote{ A Systematic Review and Meta-Analysis of the Relationship Between Hospital Volume and the Outcomes of Percutaneous Coronary Intervention.} \textit{Medicine}  95(5), e2687. \href{ https://doi.org/10.1097/MD.0000000000002687}{doi:10.1097/MD.0000000000002687}
+				
+		\item[2016] \tab Cheng, Z., Cai, M., Tao, H., He, Z., \textbf{Lin, X.}, Lin, H., Zuo, Y. \enquote{ Efficiency and productivity measurement of rural township hospitals in China: a bootstrapping data envelopment analysis.} \textit{BMJ Open}  6(11), e011911. \href{ https://doi.org/10.1136/bmjopen-2016-011911}{doi:10.1136/bmjopen-2016-011911}
+		
+		\item[2015] \tab Cheng, Z., Tao, H., Cai, M., Lin, H., \textbf{Lin, X.}, Shu, Q., Zhang, R.N.\enquote{ Technical efficiency and productivity of Chinese county hospitals: An exploratory study in Henan province, China.} \textit{BMJ Open}  5(9), e007267. \href{ https://doi.org/10.1136/bmjopen-2014-007267}{doi:10.1136/bmjopen-2014-007267}
+
+ \end{tablist}
+
+
+
+    \subsection*{Journal Article Manuscripts Under Review}
+
+    \begin{tablist}
+        
+        \item[\the\year] \tab Lin, X., Jian, W., Yip, W., Pan, J. \enquote{Perceived Competition and Process of Care in Rural China.} Submitted to  \textit{International Journal of Equity in Health}.        
+
+        \item[\the\year] \tab Lin, X., Green, J., Xian, H., Cai, M., Skrzypek, J., Tao, H. \enquote{Holiday and weekend effects on mortality of acute myocardial infarction: Evidence from China.} Submitted to  \textit{International Journal of Public Health}.
+
+    \end{tablist}
+
+    % \subsection*{Book Chapters}
+	% \subsection*{Edited Articles and Reviews}
+	%	\subsection*{Patents}
+
+
+
+
+
+ 
+    \subsection*{Manuscripts in Preparation}
+
+    \begin{tablist}
+        
+		\item[\the\year] \tab Lin, X. and Pan, J. \enquote{Association between the leader background and the control of COVID-2019: Evidence from Health Commission in China} Target: \textit{Social Science \& Medicine}, Summer 2020.
+		
+     \end{tablist}
+
+    \section*{Conference Activity}
+
+    \subsection*{Keynotes}
+
+    \begin{tablist}
+    
+    	 \item[2019] \tab Lin, X. \enquote{The Impact of Competition on Process of Care for Patients with Pneumonia: Evidence from Guizhou, China.}  2019 Health Management and Medicine Youth Forum. Chengdu, China. Oct 19--20.
+		        
+        \item[2019] \tab Lin, X. \enquote{Does the medical consortium reform improve hospital efficiency? Evidence from secondary general hospitals in Shanxi, China, 2013-2017.}  1\textsuperscript{st} Health Economics and Policy Academic Forum. Beijing, China. Mar 30--31.
+		
+    \end{tablist}
+    
+    
+  
+       \subsection*{Conference Abstract}
+
+    \begin{tablist}
+        
+        \item[2018] \tab Lin, X., Jiang, T., He, K., Lu, W., Ni, Z., Tao, H. \enquote{Exploring the effect of weekend admissions to hospital on health outcomes of inpatients with acute myocardial infarction in Shanxi, China: a longitudinal study.} . 2018 Lancet-CAMS Health Summit, Beijing, China. Oct 30--31. \href{https://doi.org/10.1016/s0140-6736(18)32648-5}{https://doi.org/10.1016/s0140-6736(18)32648-5}
+
+        
+		\item[2016] \tab Lin, X., Tao, H., Cai, M., Cheng, Z., Wang, M., Xu, C., Lin, H., Jin, L. \enquote{Health insurance and quality and efficiency of medical care for patients with acute myocardial infraction in tertiary hospitals in Shanxi, China: a retrospective study.} . 2016 Lancet-CAMS Health Summit, Beijing, China. Oct 30--31.  \href{https://doi.org/10.1016/s0140-6736(16)31997-3}{https://doi.org/10.1016/s0140-6736(16)31997-3 }            
+  
+    \end{tablist}
+    
+    
+    
+    \subsection*{Conference Presentations}
+		\begin{tablist}
+		
+        \item[2019] \tab Lin, X. \enquote{Does the medical consortium reform improve hospital efficiency? Evidence from secondary general hospitals in Shanxi, China, 2013-2017.} . 4\textsuperscript{th} Westlake Youth Form, Hangzhou. June 10--13. 
+            
+    	\end{tablist}
+
+
+
+    \section*{Grants and Awards}
+
+    \subsection*{Awards and Honors}
+
+    \begin{tablist}
+      
+        \item[2018] \tab Hubei Science and Technology Progress Award (Second Class, No.8)
+
+     \end{tablist}
+
+    %\subsection*{Grants and Fellowships}
+
+    %\begin{tablist}
+
+        %\item[2020] \tab Connections Between Built Environments, Policy, and Public Health (\$100,000 + second year option). The Public Good Projects research grant. PI.       
+        
+   % \end{tablist}
+
+   
+    \section*{Service}
+
+    \subsection*{Journal Peer Review}
+
+    \begin{itemize}
+        
+        \item \textit{International Journal of Equity in Health}
+        \item \textit{BMC Public Health}
+        \item  \textit{INQUARY}
+       
+    \end{itemize}
+
+	
+    \subsection*{Service to School}
+
+    \begin{itemize}
+    	
+    	\item International Office of West China School of Public Health (assistant position), Sichuan University, Nov, 2019-- Apr. 2020
+       
+    \end{itemize}
+	
+
+
+    \section*{Technical Skills}
+
+    \subsection*{Statistical Softwares}
+
+    \begin{itemize}
+
+        \item \textbf{R}: Expert in R; Use \textit{Rmarkdown}, \textit{ggplot2}, \textit{knitr}, \textit{dplyr}, etc. packages frequently
+        \item \textbf{Stata}: Competent in Stata; Econometric analysis
+        \item \textbf{SAS}: Some knowledge of SAS on survival analysis
+
+    \end{itemize}
+   
+    \subsection*{Ecometric Methods}
+
+    \begin{itemize}
+
+        \item Panel data analysis; Causal inference.
+
+    \end{itemize}
+
+
+
+    % display today's date as Month Year after a vertical space below the end of the text
+    \begin{center}
+        %\vspace{6em}
+        \vfill
+        Updated \monthyeardate\today
+    \end{center}
+
+
+\end{document}
